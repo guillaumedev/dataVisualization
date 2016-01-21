@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>SerieMapping</title>
+	    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div id="app">
+			<nav>
+			    <div class="nav-wrapper orange darken-4">
+			      <a href="#" class="brand-logo center">Serie Mapping</a>
+			      <ul id="nav-mobile" class="left hide-on-med-and-down">
+			       <li><a v-link="/">Recherche</a></li>
+	               <li><a v-link="/charts">Graphs</a></li>
+	               <li><a v-link="/favorite">Vos Favoris</a></li>
+			      </ul>
+
+			      <ul id="nav-mobile" class="right hide-on-med-and-down">
+			      	<li><a v-link="/crawl">Gestion des données</a></li>
+			       	<li><span class="">Clément LE BIEZ & Guillaume BROSSE&nbsp;</span></li>
+			       </ul>
+			    </div>
+			</nav>
+			<div class="content-wrapper">
+				<router-view v-transition="expand"></router-view>
+			</div>
+		</div>
+	</body>
+	<script src="lib/vue-resource.min.js"></script>
+	<script src="lib/vue-router.min.js"></script>
+	<script src="lib/vue.min.js"></script>
+	<script src="build/build.js"></script>
+	<script src="build/build.js.map"></script>
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/materialize.min.js"></script>
+	<script src="lib/d3.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+</html>
